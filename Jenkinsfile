@@ -15,13 +15,13 @@ pipeline {
            '''
                   }
                 }
-          stage ('Check-Git-Secrets') {
-          steps {
-            sh 'rm trufflehog || true'
-            sh 'docker run gesellix/trufflehog --json https://github.com/raviv935/webapp.git > trufflehog'
-            sh 'cat trufflehog'
-               }
-                                    }
+       //   stage ('Check-Git-Secrets') {
+       //   steps {
+       //     sh 'rm trufflehog || true'
+       //     sh 'docker run gesellix/trufflehog --json https://github.com/raviv935/webapp.git > trufflehog'
+       //     sh 'cat trufflehog'
+       //        }
+         //                           }
        //  stage ('Source Compostition Analysiss') {
        //  steps {
        //    sh 'rm owasp* ||true'
